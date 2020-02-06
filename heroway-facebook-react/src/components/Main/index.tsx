@@ -1,11 +1,12 @@
 import React from "react";
-import "./style.css";
 import Feed from "./Feed";
+import ProfileSidebar from "./Profile";
 
 function Main() {
   return (
     <section className="main">
       <Feed />
+      <ProfileSidebar />
     </section>
   );
 }

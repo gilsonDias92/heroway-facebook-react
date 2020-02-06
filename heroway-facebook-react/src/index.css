@@ -1,11 +1,13 @@
 @import 'https://fonts.googleapis.com/css?family=Varela+Round';
-@import './components/normalize.css';
 
+@import './components/normalize.css';
 @import './components/Header/style.css';
 @import './components/Main/style.css';
 @import './components/Main/Login/style.css';
+@import './components/Main/Feed/Post/style.css';
+@import './components/Main/Profile/style.css';
 
-/* @import '_post.css';
+/*
 @import '_profile.css';
 @import '_typing.css'; */
 
@@ -40,3 +42,4 @@ body {
     font-size: 18px;
   }
 }
+
