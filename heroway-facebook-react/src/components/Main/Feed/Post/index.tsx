@@ -8,7 +8,7 @@ import PostSendComentForm from "./PostSendCommentForm";
 function Post() {
   return (
     <div className="post">
-      <PostHeader />
+      <PostHeader name={"João da Silva"} postDate={"Feb 17 at 10:45PM"} />
       <PostContent />
       <PostAction />
       <PostComents />

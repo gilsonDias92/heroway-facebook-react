@@ -1,7 +1,12 @@
 import React from "react";
 import profilePicture from "./assets/person2.jpg";
 
-function PostHeader() {
+interface IPostHeader {
+  name: string;
+  postDate: string;
+}
+
+function PostHeader(props: IPostHeader) {
   return (
     <div className="post-header">
       <div className="post-header-profile-image">
@@ -10,8 +15,8 @@ function PostHeader() {
         </div>
       </div>
       <div className="post-header-profile-name">
-        <div className="profile-name">João da Silva</div>
-        <div className="post-date">Feb 17 at 10:45PM</div>
+        <div className="profile-name">{props.name}</div>
+        <div className="post-date">{props.postDate}</div>
       </div>
     </div>
   );
