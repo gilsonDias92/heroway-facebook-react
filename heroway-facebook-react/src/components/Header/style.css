@@ -17,8 +17,14 @@
     cursor: pointer;
   }
   
-  
   .header > .logo img {
     max-width: 22px;
     width: 100%;
+  }
+
+  .header .btn-logo {
+    padding: 0.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }

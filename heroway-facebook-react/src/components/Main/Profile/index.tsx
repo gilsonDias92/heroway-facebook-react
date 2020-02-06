@@ -1,5 +1,6 @@
-import React from 'react';
-import Typing from './ProfileInfo/Typing';
+import React from "react";
+import Typing from "./ProfileInfo/Typing";
+import profilePictureProfilesidebar from './assets/person1.jpg';
 
 function ProfileSidebar() {
   return (
@@ -7,7 +8,7 @@ function ProfileSidebar() {
       <div className="profile-image">
         <Typing />
         <div className="image-board">
-          <img src="img/person1.jpg" alt="Profile Image" />
+          <img src={profilePictureProfilesidebar} alt="Profile Image" />
         </div>
       </div>
       <div className="profile-name">

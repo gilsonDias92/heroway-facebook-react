@@ -6,10 +6,7 @@
 @import './components/Main/Login/style.css';
 @import './components/Main/Feed/Post/style.css';
 @import './components/Main/Profile/style.css';
-
-/*
-@import '_profile.css';
-@import '_typing.css'; */
+@import './components/Main/Profile/ProfileInfo/Typing/style.css';
 
 * {
   box-sizing: border-box
