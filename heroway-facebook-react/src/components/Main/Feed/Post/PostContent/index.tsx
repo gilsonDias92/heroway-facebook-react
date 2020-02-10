@@ -1,13 +1,17 @@
 import React from "react";
 import postImage from './assets/post-image.jpg';
+import { IPost } from "../../../../../redux/reducers/posts";
 
-function PostContent() {
+interface IProps {
+  text: string
+  image: string
+}
+
+function PostContent(props: IProps) {
   return (
     <>
       <div className="post-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend id
-        massa quis condimentum. Maecenas malesuada, mi id tempus consequat, ex
-        nunc rhoncus arcu, at vehicula lorem mi eu magna.
+        {props.text}
       </div>
       <div className="post-image">
         <div className="post-image-board">

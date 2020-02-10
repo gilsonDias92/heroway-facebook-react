@@ -1,32 +1,28 @@
 import * as Redux from "redux";
+import ReduxThunk from 'redux-thunk';
 import * as ReduxDevTools from "redux-devtools-extension";
-import changeColorReducer from "./reducers/changeColor";
+
+import profileReducer from "./reducers/profile";
+import postsReducer from "./reducers/posts";
+
+const state = {
+  profile: profileReducer,
+  posts: postsReducer
+}
 
 const rootReducer = Redux.combineReducers({
-  changeColor: changeColorReducer,
-  another: changeColorReducer,
-  anotherOne: changeColorReducer,
+  profile: profileReducer,
+  posts: postsReducer
+
 });
 
 export type IAppState = ReturnType<typeof rootReducer>;
 
 const store = Redux.createStore(
   rootReducer,
-  ReduxDevTools.composeWithDevTools()
+  ReduxDevTools.composeWithDevTools(
+    Redux.applyMiddleware(ReduxThunk)
+  ),
 );
 
 export default store;
-
-// import * as Redux from "redux";
-// import * as ReduxDevTools from "redux-devtools-extension";
-// import changeColorReducer, { changeColorAction } from "./reducers/changeColor";
-
-// const rootReducer = Redux.combineReducers({
-//   changeColor: changeColorReducer
-// });
-
-// const store = Redux.createStore(
-//   rootReducer,
-//   ReduxDevTools.composeWithDevTools()
-// );
-// export default store;

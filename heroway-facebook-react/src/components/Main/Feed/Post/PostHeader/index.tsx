@@ -1,22 +1,22 @@
 import React from "react";
-import profilePicture from "./assets/person2.jpg";
 
-interface IPostHeader {
-  name: string;
-  postDate: string;
+interface IProps {
+  image: string,
+  name: string,
+  date: string
 }
 
-function PostHeader(props: IPostHeader) {
+function PostHeader(props: IProps) {
   return (
     <div className="post-header">
       <div className="post-header-profile-image">
         <div className="post-header-image-board">
-          <img src={profilePicture} alt="Profile Image" />
+          <img src={props.image} alt="Profile Image" />
         </div>
       </div>
       <div className="post-header-profile-name">
-        <div className="profile-name">{props.name}</div>
-        <div className="post-date">{props.postDate}</div>
+  <div className="profile-name">{props.name}</div>
+  <div className="post-date">{props.date}</div>
       </div>
     </div>
   );
