@@ -1,13 +1,14 @@
 import React from "react";
-import Header from "./Header";
-import Main from "./Main";
+import * as ReactRedux from "react-redux";
 
-import Login from "./Main/Login";
 import Routes from "./Routes";
+import store from "../redux/configureStore";
 
 function App() {
   return (
-    <Routes />
+    <ReactRedux.Provider store={store}>
+      <Routes />
+    </ReactRedux.Provider>
   );
 }
 
