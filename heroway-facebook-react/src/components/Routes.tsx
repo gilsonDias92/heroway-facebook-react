@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Header from "./Header";
 import Login from "./Main/Login";
@@ -11,9 +11,6 @@ function Routes() {
       <Header />
       <Switch>
         <Route exact={true} path="/">
-          <Login />
-        </Route>
-        <Route path="/login">
           <Login />
         </Route>
         <Route path="/feed">
