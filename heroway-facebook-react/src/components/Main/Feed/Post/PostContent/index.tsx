@@ -4,7 +4,7 @@ import { IPost } from "../../../../../redux/reducers/posts";
 
 interface IProps {
   text: string
-  image: string
+  postImage: string
 }
 
 function PostContent(props: IProps) {
@@ -15,7 +15,7 @@ function PostContent(props: IProps) {
       </div>
       <div className="post-image">
         <div className="post-image-board">
-          <img src={postImage} alt="Profile Image" />
+          <img src={props.postImage} alt="Profile Image" />
         </div>
       </div>
     </>

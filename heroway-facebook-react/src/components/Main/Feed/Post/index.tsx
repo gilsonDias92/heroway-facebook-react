@@ -18,9 +18,7 @@ function Post(props: IProps) {
         date={props.post.date}
         image={props.post.image}
       />
-
-      <PostContent text={"Hello world"} image={props.post.image} />
-
+      <PostContent text={props.post.content} postImage={props.post.postImage} />
       <PostAction
         likes={props.post.likes}
         comments={props.post.comments.length}

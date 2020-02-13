@@ -6,7 +6,7 @@ function Header() {
   
   let history = useHistory();
   function handleClick() {
-    history.push("/login");
+    history.push("/");
   }
   
   return (

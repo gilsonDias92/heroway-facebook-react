@@ -8,6 +8,8 @@ export interface IPost {
   image: string,
   name: string,
   date: string,
+  content: string,
+  postImage: string,
   comments: Array<{
     comment: string,
     image: string,

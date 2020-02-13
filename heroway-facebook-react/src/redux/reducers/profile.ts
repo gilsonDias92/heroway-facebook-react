@@ -21,6 +21,7 @@ export default function reducer(
 ): IState {
   switch (action.type) {
     case USER_TYPING_ACTION_TYPE:
+      console.log('user typing...');
       return {
         typing: action.payload.isTyping
       };
