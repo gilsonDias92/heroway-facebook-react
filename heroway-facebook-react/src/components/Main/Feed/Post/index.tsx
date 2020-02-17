@@ -24,7 +24,7 @@ function Post(props: IProps) {
         comments={props.post.comments.length}
       />
       <PostComments comments={props.post.comments}/>
-      <PostSendComentForm />
+      <PostSendComentForm postId={props.post.id}/>  
     </div>
   );
 }
